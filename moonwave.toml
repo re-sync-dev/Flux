@@ -12,7 +12,7 @@ favicon = "/img/favicon.png"
 organizationName = "re-sync-dev"
 projectName = "flux"
 url = "https://re-sync-dev.github.io"
-baseUrl = "/flux"
+baseUrl = "/Flux"
 tagline = "Flux, the best way to manage your games data!"
 
 [footer]
