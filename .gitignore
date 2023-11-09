@@ -1,9 +1,6 @@
 # Ignore these directories
-/Packages
-
-# Ignore build files
-/build/*
-!/build/.gitkeep
+Packages
+build
 
 # Ignore these files
 *.lock
