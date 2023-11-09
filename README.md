@@ -31,7 +31,7 @@ Well to put it simply I want to make the Roblox resource pool look exactly like 
 Prioritized list of things [TODO](TODO.md)
 
 ## Example Usage
-A basic example can be found [here](https://github.com/re-sync-dev/Flux/server/init.server.lua)
+A basic example can be found [here](https://github.com/re-sync-dev/Flux/blob/main/serve/init.server.lua)
 
 ## Documentation
 Documentation can be found [here](https://re-sync-dev.github.io/Flux/)
