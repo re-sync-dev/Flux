@@ -24,7 +24,7 @@ jobs:
     - name: Lint
       run: |
         wally install
-        rojo sourcemap -o sourcemap.json
+        rojo sourcemap default.project.json -o sourcemap.json
         curl -o roblox.d.lua https://raw.githubusercontent.com/JohnnyMorganz/luau-lsp/main/scripts/globalTypes.d.lua
         luau-lsp analyze ./src --sourcemap=./sourcemap.json --definitions=./roblox.d.lua
 

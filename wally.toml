@@ -1,7 +1,7 @@
 [package]
 name = "vyon/flux"
 description = "DataStore wrapper with a focus on extensibility and easy modification to fit developer needs."
-version = "1.0.0"
+version = "0.1.0"
 registry = "https://github.com/UpliftGames/wally-index"
 realm = "shared"
 
@@ -10,5 +10,4 @@ T = "osyrisrblx/t@3.0.0"
 TestEz = "roblox/testez@0.4.1"
 Promise = "evaera/promise@4.0.0"
 Signal = "sleitnick/signal@2.0.1"
-Squash = "data-oriented-house/squash@1.1.6"
 Janitor = "howmanysmall/janitor@1.15.6"

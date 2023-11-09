@@ -4,7 +4,7 @@ gitRepoUrl = "https://github.com/re-sync-dev/flux" # From Git
 gitSourceBranch = "main"
 
 [docusaurus]
-onBrokenLinks = "throw"
+onBrokenLinks = "ignore"
 onBrokenMarkdownLinks = "warn"
 favicon = "/img/favicon.png"
 

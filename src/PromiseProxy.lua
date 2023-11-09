@@ -39,18 +39,18 @@ local PromiseProxy = {}
 	@return Promise<T>
 ]=]
 function PromiseProxy.async<T>(Handler: (Resolve: (T) -> (), Reject: (any) -> ()) -> ())
-	local NewPromise = Promise.async(Handler)
+	local NewPromise: any = Promise.async(Handler)
 
-	local function Await<T>(self: Promise<T>)
+	local function Await(self: Promise<T>): T
 		return NewPromise:await()
 	end
 
-	local function Then<T>(self: Promise<T>, Callback: (T) -> ())
+	local function Then(self: Promise<T>, Callback: (T) -> ()): Promise<T>
 		NewPromise:andThen(Callback)
 		return self
 	end
 
-	local function Catch(self: Promise<T>, Callback: (string) -> ())
+	local function Catch(self: Promise<T>, Callback: (string) -> ()): Promise<T>
 		NewPromise:catch(Callback)
 		return self
 	end
