@@ -1,0 +1,10 @@
+# Ignore these directories
+/Packages
+
+# Ignore build files
+/build/*
+!/build/.gitkeep
+
+# Ignore these files
+*.lock
+sourcemap.json

@@ -1,0 +1,20 @@
+title = "Flux"                              # From Git
+gitRepoUrl = "https://github.com/re-sync-dev/flux" # From Git
+
+gitSourceBranch = "main"
+
+[docusaurus]
+onBrokenLinks = "throw"
+onBrokenMarkdownLinks = "warn"
+favicon = "/img/favicon.png"
+
+# From git:
+organizationName = "re-sync-dev"
+projectName = "flux"
+url = "https://re-sync-dev.github.io"
+baseUrl = "/flux"
+tagline = "Flux, the best way to manage your games data!"
+
+[footer]
+style = "dark"
+copyright = "Copyright © 2023 Re-Sync.dev. Built with Moonwave and Docusaurus"
