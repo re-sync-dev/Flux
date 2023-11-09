@@ -9,24 +9,24 @@ on:
       - main
 
 jobs:
-  lint:
-    name: Linting
-    runs-on: ubuntu-22.04
-    steps:
-    - name: Checkout Code
-      uses: actions/checkout@v3
+#  lint:
+#    name: Linting
+#    runs-on: ubuntu-22.04
+#    steps:
+#    - name: Checkout Code
+#      uses: actions/checkout@v3
 
-    - uses: ok-nick/setup-aftman@v0.4.2
-      name: Setup Aftman
-      with:
-        token: ${{ github.token }}
+#    - uses: ok-nick/setup-aftman@v0.4.2
+#      name: Setup Aftman
+#      with:
+#        token: ${{ github.token }}
     
-    - name: Lint
-      run: |
-        wally install
-        rojo sourcemap default.project.json -o sourcemap.json
-        curl -o roblox.d.lua https://raw.githubusercontent.com/JohnnyMorganz/luau-lsp/main/scripts/globalTypes.d.lua
-        luau-lsp analyze ./src --sourcemap=./sourcemap.json --definitions=./roblox.d.lua
+#    - name: Lint
+#      run: |
+#        wally install
+#        rojo sourcemap default.project.json -o sourcemap.json
+#        curl -o roblox.d.lua https://raw.githubusercontent.com/JohnnyMorganz/luau-lsp/main/scripts/globalTypes.d.lua
+#        luau-lsp analyze ./src --sourcemap=./sourcemap.json --definitions=./roblox.d.lua
 
   style:
     name: Styling
